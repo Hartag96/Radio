@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.view.RadioController">
+   <children>
+      <SplitPane dividerPositions="0.5" layoutX="10.0" layoutY="10.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+            <AnchorPane minHeight="0.0" minWidth="0.0" onMouseClicked="#handlePlay" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <ScrollBar layoutX="273.0" layoutY="75.0" prefHeight="17.0" prefWidth="160.0" value="50.0" />
+                  <ScrollBar layoutX="455.0" layoutY="75.0" prefHeight="17.0" prefWidth="160.0" value="50.0" />
+                  <Label layoutX="335.0" layoutY="103.0" text="Volume" />
+                  <Label layoutX="514.0" layoutY="103.0" text="Balance" />
+                  <ToggleButton layoutX="170.0" layoutY="70.0" mnemonicParsing="false" onAction="#handlePlay" text="Play" />
+                  <RadioButton fx:id="U" layoutX="684.0" layoutY="68.0" mnemonicParsing="false" onAction="#channelSwitch" text="U" />
+                  <RadioButton fx:id="S" contentDisplay="CENTER" layoutX="753.0" layoutY="68.0" mnemonicParsing="false" onAction="#channelSwitch" text="S" textOverrun="WORD_ELLIPSIS" />
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
