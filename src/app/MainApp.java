@@ -21,8 +21,8 @@ public class MainApp extends Application {
 
     public MainApp() {
         // Add some sample data
-        this.radioU = new Radio("1.wav");
-        this.radioS = new Radio("2.wav");
+        this.radioU = new Radio(new String []{"1.wav", "2.wav"});
+        this.radioS = new Radio(new String []{"3.wav", "4.wav"});
     }
 
     @Override
